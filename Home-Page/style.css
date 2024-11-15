@@ -177,3 +177,8 @@
 .card-button:active{
     opacity: 0.8;
 }
+
+.card-button a{
+    background-color: transparent;
+    text-decoration: none;
+}
