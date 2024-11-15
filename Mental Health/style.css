@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 600;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
+}
+
+
+
+*{
+    background-color: #333333;
+    color: whitesmoke;
+    font-family: "San Francisco";
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 0px;
+}
+
+.info-head{
+    font-size: 30px;
+    margin: 18px 0px;
+    text-align: left;
+}
+
+.info-para{
+    font-size: 25px;
+    margin: 12px 0px;
+    text-align: left;
+}
+
+.img-blog {
+    width: 230px;
+}
+
+.info{
+    display: flex;
+    margin: 30px 0px;
+    justify-content: space-between;
+}
+
+.info-head-right{
+    font-size: 30px;
+    margin: 18px 0px;
+    text-align: left;
+    text-align: right;
+}
+
+.info-para-right{
+    text-align: right;
+    font-size: 25px;
+    margin: 12px 0px;
+}
