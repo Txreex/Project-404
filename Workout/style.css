@@ -2,6 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    user-select: none;
 }
 
 .title {
@@ -32,3 +33,4 @@ body {
 .bodymap:hover {
     fill: #ff4500; /* Orangish-red color on hover */
 }
+
