@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Geist+Mono:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 @font-face {
     font-family: "San Francisco";
     font-weight: 600;
@@ -5,6 +8,7 @@
   }
 
 *{
+    user-select: none;
     margin: 0;
     padding: 0;
     font-family: "San Francisco";
@@ -17,7 +21,8 @@
 }
 
 .navigation-bar{
-    background-color: #454545e6;
+    /* position: fixed; */
+    background-color: #333333;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -26,16 +31,16 @@
 
 .nav-list{
     display: flex;
-    background-color: #454545e6;
+    background-color: #333333;
 }
 
 .nav-left, .icon, .Name, .person, .nav-right{
-    background-color: #454545e6;
+    background-color: #333333;
 }
 
 .nav-list li{
     display: flex;
-    background-color: #454545e6;
+    background-color: #333333;
     text-decoration: none;
     margin-right: 30px;
     font-size: 18px;
@@ -71,8 +76,26 @@
 } 
 
 .icon-name{
-    color: rgba(255, 221, 221, 0.929);
+    padding-top: 220px;
+    padding-left: 150px;
+    color: white;
     font-size: 70px;
+    font-family: "Noto Sans", cursive;
+    font-weight: 700;
+    text-shadow: 0px 0px 8px #ffffff;
+    background-color: transparent;
+}
+
+.icon-description{
+    padding-top: 8px;
+    padding-left: 100px;
+    /* color: rgba(255, 169, 82, 0.929); */
+    color: white;
+    font-size: 35px;
+    text-shadow: 0px 0px 8px #ffffff;
+    font-family: "Noto Sans", cursive;
+    font-weight: 700;
+    opacity: 100%;
     background-color: transparent;
 }
 
@@ -133,4 +156,24 @@
 
 .card-button:hover {
     background-color: #0056b3;
+}
+
+.icon-name:hover, .icon-description:hover{
+    animation: hov-glow 0.4s;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes hov-glow {
+    from{
+        text-shadow: 0px 0px 8px #ffffff;
+    }
+    to{
+        text-shadow: 0px 0px 14px #ffffff;
+    }
+}
+
+.card-button:active{
+    opacity: 0.8;
 }
