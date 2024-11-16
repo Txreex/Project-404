@@ -37,3 +37,49 @@ body {
     fill: #ff4500; /* Orangish-red color on hover */
 }
 
+.exercise-card {
+    background-color: #333333;
+    color: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 15px;
+    max-width: 320px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .exercise-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .exercise-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #f1f1f1;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 8px;
+  }
+  
+  .instruction, .target-muscle, .equipment {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .instruction::before, .target-muscle::before, .equipment::before {
+      content: '• ';
+      color: #ffbb33;
+      font-weight: bold;
+}
+  
+.appendOuter{
+    display: grid;
+    margin-left: 50px;
+    grid-template-columns: repeat(3 , 1fr);
+}
+
+.appendOuter div{
+    background-color: #3c3c3c;
+}

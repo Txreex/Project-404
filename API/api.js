@@ -3,5 +3,5 @@ async function muscleByExercise(querry) {
     data = await response.json();
     return data;
 }
-querry = document.getElementById("calves");
-muscleByExercise(querry)
+
+muscleByExercise("calves")
