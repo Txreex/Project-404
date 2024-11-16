@@ -1,6 +1,8 @@
 /* Base styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
+    background-color: #333333;
+    color: white;
     text-align: center;
     user-select: none;
 }
@@ -12,8 +14,9 @@ body {
 
 .people {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    margin: 0px 30px;
     height: 80vh;
 }
 
